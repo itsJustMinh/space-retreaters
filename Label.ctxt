@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Label
+comment1.params=text\ size
+comment1.target=Label(java.lang.String,\ int)
+comment2.params=img
+comment2.target=Label(java.lang.String)
+comment3.params=
+comment3.target=void\ act()
+comment4.params=
+comment4.target=boolean\ isClicked()
+comment5.params=
+comment5.target=boolean\ isPressed()
+numComments=6

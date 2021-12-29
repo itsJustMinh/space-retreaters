@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Powerup
+comment0.text=\r\n\ Basic\ Powerup\ Template\ Class\r\n\ \r\n\ @author\ Minh\ &\ Henry\ Ballsack\r\n\ @version\ v0.0.7\r\n
+comment1.params=
+comment1.target=Powerup()
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ fall()
+comment3.text=\r\n\ Method\ makes\ powerup\ fall\ down\ the\ screen.\r\n
+comment4.params=
+comment4.target=void\ checkIfDie()
+comment4.text=\r\n\ Kills\ itself\ if\ it\ touches\ player\ or\ the\ bottom\ of\ screen.\r\n
+comment5.params=
+comment5.target=boolean\ isOnScreen()
+comment6.params=
+comment6.target=void\ activate()
+comment6.text=\r\n\ blank\ method\ because\ it\ will\ be\ implemented\ in\ the\ other\ powerups\r\n
+numComments=7

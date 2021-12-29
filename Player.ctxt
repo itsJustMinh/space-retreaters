@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Player
+comment1.params=
+comment1.target=Player()
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ move()
+comment4.params=
+comment4.target=void\ checkIfDie()
+comment5.params=num
+comment5.target=void\ setLives(int)
+comment6.params=
+comment6.target=int\ getLives()
+comment7.params=
+comment7.target=void\ lifePlus()
+comment8.params=
+comment8.target=void\ showLives()
+numComments=9
