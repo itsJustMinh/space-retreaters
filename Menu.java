@@ -27,6 +27,7 @@ public class Menu extends World
         if(aboutPageButton.isClicked())
             Greenfoot.setWorld(new AboutPage());
     }
+    
     private void prepare()
     {
         addObject(logoGif, getWidth()/2, getHeight()/8 + 5);
