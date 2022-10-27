@@ -1,11 +1,11 @@
 #BlueJ class context
 comment0.target=LifeUp
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ LifeUp\ here.\r\n\ \r\n\ @author\ Henry\ Ballsack\r\n\ @version\ v0.0.8\r\n
+comment0.text=\n\ Write\ a\ description\ of\ class\ LifeUp\ here.\n\ \n\ @author\ Henry\ Ballsack\n\ @version\ v0.0.8\n
 comment1.params=
 comment1.target=LifeUp()
 comment2.params=
 comment2.target=void\ act()
-comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ LifeUp\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment2.text=\n\ Act\ -\ do\ whatever\ the\ LifeUp\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
 comment3.params=
 comment3.target=void\ activate()
 numComments=4

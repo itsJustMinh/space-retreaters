@@ -9,12 +9,11 @@ public class Player extends Actor
     private static boolean isInvincible;
     private final int playerWidth = 30;
     private final int playerHeight = 21;
-    private final GreenfootSound gotHit = new GreenfootSound("got-hit-owie.mp3");
     public Player()
     {
         defaultPlayerGif = new GifImage("player.gif");
         die = new GifImage("boom.gif");
-        lives = 5;
+        lives = 10;
         timer = 10;
         isInvincible = false;
     }
@@ -37,12 +36,10 @@ public class Player extends Actor
         if(isTouching(Projectile.class))
         {
             removeTouching(Projectile.class);
-            gotHit.play();
             lives--;
         }
         else if(lives == 0)
         {
-            gotHit.play();
             for(int i = 0; i < 8; i++)
             {
                 setImage(die.getCurrentImage());
@@ -56,5 +53,6 @@ public class Player extends Actor
     public static int  getLives(){return lives;}
     public void lifePlus(){if(lives < 10)lives++;}
     public void showLives(){getWorld().showText("Player Lives: " + lives, getWorld().getWidth()-85,15);}
-    
+    public int getHeight(){return playerHeight;}
+    public static void changeInvincibility(){isInvincible = !isInvincible;}
 }

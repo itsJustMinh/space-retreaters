@@ -15,7 +15,7 @@ public class PlayersShield extends Actor
     private  GreenfootImage shieldIcon = new GreenfootImage("player-shield.png");
     public PlayersShield()
     {
-        life = 1;
+        life = 3;
         shieldIcon.scale(32,11);
         setImage(shieldIcon);
     }
@@ -34,11 +34,13 @@ public class PlayersShield extends Actor
     {
         if(isTouching(Projectile.class))
         {
+            System.out.printf("%d lives left...\n", life);
             removeTouching(Projectile.class);
             life--;
         }
         if(life == 0)
         {
+            removeTouching(Projectile.class);
             getWorld().removeObject(this);
         }
     }

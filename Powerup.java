@@ -3,13 +3,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Basic Powerup Template Class
  * 
- * @author Minh & Henry Ballsack
+ * @author Minh
  * @version v0.0.7
  */
 public class Powerup extends Actor
 {
     private static boolean isStillHere;
-    private final GreenfootSound activate = new GreenfootSound("powah-uppu.mp3");
     public Powerup(){isStillHere = true;}
     public void act() 
     {
@@ -27,7 +26,6 @@ public class Powerup extends Actor
     {
         if(isTouching(Player.class))
         {
-            activate.play();
             activate();
             isStillHere = false;
             getWorld().removeObject(this);

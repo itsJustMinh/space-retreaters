@@ -11,7 +11,7 @@ import java.util.*;
 public class MainGame extends World
 {
     public static int count; //game time
-    private boolean isPaused;
+    private boolean toggleOn;
     private final GifImage background = new GifImage("bg.gif"); //background gif of image
     /**
      * Constructor for objects of class Menu.
@@ -30,10 +30,12 @@ public class MainGame extends World
         String str = "Score: " + count/2;
         showText(str , 60, 15);
         spawnPowerups();
-        switchToStart();      
+        switchToStart();
+        pause();       
     }
     /**
-     * Spawns either LifeUp powerup or Invincibility powerup
+     * Spawns either LifeUp powerup or Invincibility powerup.
+     * Problem: sometimes powerups don't spawn at all and it takes multiple world restarts to get it working
      */
     public void spawnPowerups()
     {
@@ -58,13 +60,22 @@ public class MainGame extends World
      */
     public void switchToStart(){if(Greenfoot.isKeyDown("u"))Greenfoot.setWorld(new Menu());}
     /**
+     * pauses game (toggled by spacebar)
+     * 
+     */
+    public void pause()
+    {
+        if(Greenfoot.isKeyDown("space"))
+                Greenfoot.delay(1);
+    }
+    /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
      */
     private void prepare()
     {
         count = 0;
-        isPaused = false;
+        toggleOn = false;
         setBackground(background.getCurrentImage());
         addObject(new Player(), getWidth()/2, getHeight()/2);
         addObject(new TumorEnemy(), getWidth()/3, 3 * (getHeight()/4));
